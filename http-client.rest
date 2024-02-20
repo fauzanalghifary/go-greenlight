@@ -1,0 +1,8 @@
+### HEALTHCHECK
+GET {{BASE_URL}}/v1/healthcheck
+
+### POST MOVIES
+POST {{BASE_URL}}/v1/movies
+
+### GET MOVIES BY ID
+GET {{BASE_URL}}/v1/movies/1
