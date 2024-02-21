@@ -11,7 +11,7 @@ func (app *application) logError(r *http.Request, err error) {
 		uri    = r.URL.RequestURI()
 	)
 
-	app.logger.Println(err.Error(), "method", method, "uri", uri)
+	app.logger.Error(err.Error(), "method", method, "uri", uri)
 }
 
 func (app *application) errorResponse(w http.ResponseWriter, r *http.Request, status int, message any) {
