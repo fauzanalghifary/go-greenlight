@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ### GET MOVIES
-GET {{BASE_URL}}/v1/movies
+GET {{BASE_URL}}/v1/movies?genres=animation,adventure
 
 ### GET MOVIES BY ID
 GET {{BASE_URL}}/v1/movies/1
