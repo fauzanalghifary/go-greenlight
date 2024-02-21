@@ -12,5 +12,19 @@ Content-Type: application/json
   "genres": ["Animation", "Adventure", "Comedy"]
 }
 
+### GET MOVIES
+GET {{BASE_URL}}/v1/movies
+
 ### GET MOVIES BY ID
 GET {{BASE_URL}}/v1/movies/1
+
+### PATCH MOVIES BY ID
+PUT {{BASE_URL}}/v1/movies/1
+Content-Type: application/json
+
+{
+  "year": 2016
+}
+
+### DELETE MOVIES BY ID
+DELETE {{BASE_URL}}/v1/movies/1
