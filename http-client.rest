@@ -3,6 +3,14 @@ GET {{BASE_URL}}/v1/healthcheck
 
 ### POST MOVIES
 POST {{BASE_URL}}/v1/movies
+Content-Type: application/json
+
+{
+  "title": "Moana",
+  "year": 2016,
+  "runtime": 107,
+  "genres": ["animation","adventure"]
+}
 
 ### GET MOVIES BY ID
 GET {{BASE_URL}}/v1/movies/1
