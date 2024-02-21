@@ -7,9 +7,9 @@ Content-Type: application/json
 
 {
   "title": "Moana",
-  "year": 2016,
-  "runtime": 107,
-  "genres": ["animation","adventure"]
+  "year": 1000,
+  "runtime": "107 mins",
+  "genres": ["sci-fi","sci-fi"]
 }
 
 ### GET MOVIES BY ID
