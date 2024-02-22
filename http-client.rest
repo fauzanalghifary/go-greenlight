@@ -47,3 +47,12 @@ Content-Type: application/json
 {
   "token": "ZN7YLFYWHQQZTGXCJN2JDPLONI"
 }
+
+### Authenticate User
+POST {{BASE_URL}}/v1/tokens/authentication
+Content-Type: application/json
+
+{
+  "email": "alice2@example.com",
+  "password": "pa55word"
+}
