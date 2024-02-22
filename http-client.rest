@@ -28,3 +28,14 @@ Content-Type: application/json
 
 ### DELETE MOVIES BY ID
 DELETE {{BASE_URL}}/v1/movies/1
+
+
+### POST USERS
+POST {{BASE_URL}}/v1/users
+Content-Type: application/json
+
+{
+  "name": "Alice Smith",
+  "email": "alice@example.com",
+  "password": "pa55word"
+}

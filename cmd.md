@@ -1,7 +1,7 @@
 ### PSQL
 
 psql --dbname=greenlight --username=greenlight --host=localhost
-psql -U quipperindonesia -d greenlight
+psql -U quip************ -d greenlight
 SELECT current_user;
 
 ### Migration
