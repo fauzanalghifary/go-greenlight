@@ -14,6 +14,7 @@ Content-Type: application/json
 
 ### GET MOVIES
 GET {{BASE_URL}}/v1/movies?genres=animation,adventure
+Authorization: Bearer RNA5LR6W6FPF7AVUPJ552SJZSU
 
 ### GET MOVIES BY ID
 GET {{BASE_URL}}/v1/movies/1
@@ -53,6 +54,6 @@ POST {{BASE_URL}}/v1/tokens/authentication
 Content-Type: application/json
 
 {
-  "email": "alice@example.com",
+  "email": "faith@example.com",
   "password": "pa55word"
 }
