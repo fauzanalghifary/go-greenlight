@@ -37,8 +37,8 @@ POST {{BASE_URL}}/v1/users
 Content-Type: application/json
 
 {
-  "name": "Alice Smith",
-  "email": "alice@example.com",
+  "name": "Grace Smith",
+  "email": "grace@example.com",
   "password": "pa55word"
 }
 
