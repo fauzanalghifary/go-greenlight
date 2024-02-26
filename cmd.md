@@ -1,6 +1,7 @@
 ### PSQL
 
 psql --dbname=greenlight --username=greenlight --host=localhost
+export PATH="/opt/homebrew/Cellar/postgresql@15/15.6/bin:$PATH"
 psql -U quip************ -d greenlight
 SELECT current_user;
 

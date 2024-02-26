@@ -3,6 +3,7 @@ GET {{BASE_URL}}/v1/healthcheck
 
 ### POST MOVIES
 POST {{BASE_URL}}/v1/movies
+Authorization: Bearer XJUCCZDB5YE7MNLL6IDBTSKHD4
 Content-Type: application/json
 
 {
@@ -14,7 +15,7 @@ Content-Type: application/json
 
 ### GET MOVIES
 GET {{BASE_URL}}/v1/movies?genres=animation,adventure
-Authorization: Bearer RNA5LR6W6FPF7AVUPJ552SJZSU
+Authorization: Bearer XJUCCZDB5YE7MNLL6IDBTSKHD4
 
 ### GET MOVIES BY ID
 GET {{BASE_URL}}/v1/movies/1
@@ -54,6 +55,6 @@ POST {{BASE_URL}}/v1/tokens/authentication
 Content-Type: application/json
 
 {
-  "email": "faith@example.com",
+  "email": "alice@example.com",
   "password": "pa55word"
 }
