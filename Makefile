@@ -21,7 +21,8 @@ confirm:
 ## run/api: run the cmd/api application
 .PHONY: run/api
 run/api:
-	go run ./cmd/api -db-dsn=${GREENLIGHT_DB_DSN}
+	#go run ./cmd/api -db-dsn=${GREENLIGHT_DB_DSN}
+	air -c .air.toml
 
 ## db/psql: connect to the database using psql
 .PHONY: db/psql
@@ -39,6 +40,12 @@ db/migrations/new:
 db/migrations/up: confirm
 	@echo 'Running up migrations...'
 	migrate -path ./migrations -database ${GREENLIGHT_DB_DSN} up
+
+
+## db/migrations/down
+db/migrations/down: confirm
+	@echo 'Running down migrations...'
+	migrate -path ./migrations -database ${GREENLIGHT_DB_DSN} force 0
 
 # ==================================================================================== #
 # QUALITY CONTROL
